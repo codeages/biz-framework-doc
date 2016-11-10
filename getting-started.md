@@ -69,7 +69,7 @@ src/
 
 以编写 User Dao 为例，我们首先需要创建`UserDao接口`：
 
-```
+```php
 <?php
 namespace Biz\User\Dao;
 
@@ -83,7 +83,7 @@ interface UserDao extends GeneralDaoInterface
 
 这里我们直接继承了`Codeages\Biz\Framework\Dao\GeneralDaoInterface`，在`GeneralDaoInterface`中，我们声明了常用的Dao接口：
 
-```
+```php
 <?php
 namespace Codeages\Biz\Framework\Dao;
 
@@ -107,7 +107,7 @@ interface GeneralDaoInterface extends DaoInterface
 
 同样我们的 User Dao 实现类，也可继承自`Codeages\Biz\Framework\Dao\GeneralDaoImpl` ：
 
-```
+```php
 <?php
 namespace Biz\User\Dao\Impl;
 
@@ -138,7 +138,7 @@ class UserDaoImpl extends GeneralDaoImpl implements UserDao
 
 以编写 User Service 为例，我们首先需创建`UserService`接口：
 
-```
+```php
 <?php
 namespace Biz\User\Service;
 
@@ -153,7 +153,7 @@ interface UserService
 
 然后创建 User Service 的实现类：
 
-```
+```php
 <?php
 namespace Biz\User\Service\Impl;
 
@@ -185,7 +185,7 @@ class UserServiceImpl extends BaseService implements UserService
 
 以实现*显示用户的个人主页*为例，我们的`Controller`代码大致为：
 
-```
+```php
 <?php
 
 class UserController
