@@ -27,5 +27,3 @@
 ## Cookbook
 
 * [如何开发通用业务服务模块?](how-to-develop-common-biz-module.md)
-
-
