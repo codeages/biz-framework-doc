@@ -73,12 +73,30 @@ class ExampleDaoImpl extends GeneralDaoImpl implements UserDao
 
 其中属性`$table`表明此Dao类所对应的数据库表名。每个Dao类，须申明`declares()`方法，该方法返回一个array类型的配置：
 
-| Key             |类型     |说明                     |
-|-----------------|--------|------------------------|
-| timestamps      | array  | 定义数据创建、新增时的时间戳自动更新的字段。第1个字段表示创建时自动更新的字段、第2个字段表示数据更新时自动更新的字段。
-| serializes      | array  | 定义需序列化的字段，序列化方式有`json` |
-| orderbys        | array  | 定义可排序的字段 |
-| conditions      | array  | 定义可被search方法调用的查询条件 |
+### `timestamps`
+
+类型: array 默认: array()
+
+定义数据创建、新增时的时间戳自动更新的字段。第1个字段表示创建时自动更新的字段、第2个字段表示数据更新时自动更新的字段。
+
+### `serializes`
+
+类型: array 默认: array()
+
+定义需序列化的字段，序列化方式有`json`, `delimiter`。
+
+### `orderbys`
+
+类型：array 默认: array()
+
+定义可排序的字段。
+
+### `conditions`
+
+类型：array 默认: array()
+
+定义可被search方法调用的查询条件
+
 
 ## 命名约定
 
