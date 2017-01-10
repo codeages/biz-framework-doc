@@ -31,7 +31,7 @@ composer require codeages/biz-framework
 $biz = new Biz($config);
 ```
 
-`Biz`对象，是应用业务层的依赖注入容器(Dependency Injection Container)对象，一个应用中只能存在一个单例，在应用的其他地方可以通过`$biz = Biz::instance();`来获得Biz容器对象。由于BizFramework不涉及应用配置的处理，所以，你需从应用级框架中获得业务相关的配置，组装成`$config`数组，在初始化`Biz`对象时，作为参数传入。
+`Biz`对象，是应用业务层的依赖注入容器(Dependency Injection Container)对象。由于BizFramework不涉及应用配置的处理，所以，你需从应用级框架中获得业务相关的配置，组装成`$config`数组，在初始化`Biz`对象时，作为参数传入。
 
 !!! note "容器"
     `Biz`类直接继承自`Pimple\Container`，所以拥有Pimple的所有容器特性，请阅读[Pimple的文档](http://pimple.sensiolabs.org/)，来了解容器的使用。
