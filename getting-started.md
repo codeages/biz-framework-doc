@@ -68,7 +68,7 @@ src/
   * 请在应用的`composer.json`的autoload部分加上`psr-4`的`autoload`规则，比如：
     ```
     "autoload": {
-        "psr-4": { 
+        "psr-4": {
             "": "src/"
         }
     }
@@ -76,7 +76,7 @@ src/
   * 约定应用级业务层的顶级命名空间为`Biz`，命名空间的第二级为模块名；
   * 约定*Service接口*的接口名以Service作为后缀，命名空间为`Biz\模块名\Service`, 上述例子中`UserService`的完整类名为`Biz\User\Service\UserService`；
   * 约定*Service实现类*的类名以ServiceImpl作为后缀，命名空间为`Biz\模块名\Service\Impl`, 上述例子中`UserServiceImpl`的完整类名为`Biz\User\Service\Impl\UserServiceImpl`；
-  * *Dao接口、类名*的命名约定，同*Sevice接口、类名*的命名约定。
+  * Dao接口、类名的命名约定，同Sevice接口、类名的命名约定。
 
 <h2 id="migration">创建数据库</h2>
 
